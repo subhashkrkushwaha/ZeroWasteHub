@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="slapshScreen">#8FBD91</color>
+    <color name="singInUP">#2196F3</color>
+    <color name="nav_item_color">#48D556</color>
+
+    <!--App Toolbar Color-->
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="accentColor">#8BC34A</color>
+
+    <!--Optional-->
+    <color name="ecoGreen">#43A047</color>
+    <color name="leafGreen">#2E7D32</color>
+    <color name="lightGreenBG">#DCEDC8</color>
+
+
+    <!--Account background-->
+    <color name="appBackGround">#73D90C</color>
+
+    <!--Account -->
+    <color name="secondary">#FF03DAC5</color>
+
+    <color name="night_mode">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+    <!--Home -->
+    <color name="grey">#EBECF0</color>
+    <color name="recent">#8EC38F</color>
+    <!--search-->
+    <color name="gray">#F0F0F0</color>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#D0E5D0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SingInActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="@string/WelCome"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:background="@drawable/custom_enter_bg"
+        android:hint="@string/LoginName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:autofillHints="name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/userPassword"
+        android:autofillHints="password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_enter_bg"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/buttonSignIn"
+    android:layout_width="222dp"
+    android:layout_height="61dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/custom_button"
+    android:gravity="center"
+    android:text="@string/SingIn"
+    android:textColor="@color/black"
+    android:textSize="25sp" android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/textSignUP"
+            android:text="@string/DoNotAcc"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textSignUpB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/SingUp"
+            android:textColor="@color/singInUP"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

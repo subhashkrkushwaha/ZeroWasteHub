@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0EEEE"
+    tools:context=".Fragment.ShareFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prodImaCar"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/prodImage"
+                android:contentDescription="productImage"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/price"
+            android:hint="Price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_enter_bg"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:autofillHints="name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/title"
+            android:hint="Product title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_enter_bg"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:autofillHints="name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/details"
+            android:hint="Product Detaills"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_enter_bg"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:autofillHints="name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/description"
+            android:hint="Product Description"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_enter_bg"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:autofillHints="name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/location"
+            android:hint="Product location Or Location "
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_enter_bg"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Select Category"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_enter_bg"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/subCategory"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:hint="Select Sub Category"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_enter_bg"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buUplP"
+            android:layout_width="222dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="Upload"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

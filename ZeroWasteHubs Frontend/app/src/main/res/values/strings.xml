@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ZeroWasteHubs</string>
+
+    <string name="google_maps_key">AIzaSyBB1tD_7Q_VtoyEfPyERwk4knYpZvTGkCo</string>
+
+
+    <string name="WelCome">WELCOME TO Zero Waste Hub</string>
+    <string name="LoginName">Enter UserName</string>
+    <string name="password">Password</string>
+    <string name="SingIn">Sing In</string>
+    <string name="SingUp">Sing Up</string>
+    <string name="DoNotAcc">"Don't have any account ? "</string>
+
+    <string name="Home">Home</string>
+    <string name="Search">Search</string>
+    <string name="Share">Share</string>
+    <string name="Categories">Categories</string>
+    <string name="Account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Product Detail-->
+    <string name="disclaimer"><b>Disclaimer:</b> Please note that Zero waste Hub servers
+        as online marketplace and intermediary and merely providing the platform to the listers to list their businesses.
+        The products listed on our platform are provided by third party i.e listers with the pricing marked at their discretion.
+        We do not verify the authenticity or quality of these products,
+        and we make no representations or warranties regarding their genuineness. By using our platform,
+        you acknowledge that any purchase made is at your own risk, and we are not liable for any issues related
+        to product authenticity, quality, or performance.
+        We encourage users to exercise caution and discretion before making any payments to the listers.</string>
+    <!--For network relate-->
+    <string name="ipConfig">http://10.140.110.169:8080/</string>
+</resources>

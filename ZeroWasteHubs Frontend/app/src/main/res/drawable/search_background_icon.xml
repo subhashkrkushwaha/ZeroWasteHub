@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Transparent background (optional) -->
+    <item android:drawable="@android:color/white"/>
+
+    <!-- Your small image in center -->
+    <item android:drawable="@drawable/search_icon"
+        android:width="24dp"
+        android:height="24dp"
+        android:left="10dp"
+        android:gravity="start|center"/>
+
+</layer-list>

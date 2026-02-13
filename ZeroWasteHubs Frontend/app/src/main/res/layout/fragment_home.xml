@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 🔹 Top bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/app_logo"
+                android:contentDescription="Logo"/>
+            <!-- Add this View to push the TextView to the right -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Select Location"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/location_icon"
+                android:drawableEnd="@drawable/down_arrow"
+                android:drawablePadding="5dp"/>
+        </LinearLayout>
+        <!-- Search bar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:elevation="4dp"
+                app:cardBackgroundColor="@color/white">
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    app:queryHint="Search"
+                    app:iconifiedByDefault="false"
+                    app:defaultQueryHint="Search"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  />
+            </androidx.cardview.widget.CardView>
+            <!--     Heart Icon to save -->
+            <ImageView
+                android:id="@+id/watchList"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/favorite_save"
+                android:contentDescription="Save Favorites"
+                android:layout_width="55dp"
+                android:layout_height="35dp"/>
+            <!--Notification icon-->
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/notifications_icons"
+                android:contentDescription="Notification"
+                android:layout_width="55dp"
+                android:layout_height="35dp"/>
+
+        </LinearLayout>
+        <!-- 🔹 Categories RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp" />
+
+        <!-- 🔹 RecentView RecyclerView -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Recently Viewed items"
+            android:textColor="#3F51B5"
+            android:background="#A5CCA5"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150sp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRecent"
+                android:layout_width="match_parent"
+                android:background="@drawable/recycler_recent_backcolor"
+                android:layout_height="125dp"
+                android:paddingHorizontal="10dp"
+                android:orientation="horizontal" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Fresh recommendations"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- 🔹 Recently viewed RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_AllProduct"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

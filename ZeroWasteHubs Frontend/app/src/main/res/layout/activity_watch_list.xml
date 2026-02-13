@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WatchListActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/back_home_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_margin="5dp"
+            android:layout_gravity="start"
+            android:src="@drawable/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:text="Wishlist"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+    <RelativeLayout
+        android:layout_below="@id/back_home_cardView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/bg_image"
+            android:layout_centerInParent="true"
+            android:src="@drawable/favorite_save"
+            android:layout_width="250dp"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/liketocollect"
+            android:layout_below="@+id/bg_image"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="You haven't liked anything yet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/liketocollect"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="Collect all the things you like in one place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

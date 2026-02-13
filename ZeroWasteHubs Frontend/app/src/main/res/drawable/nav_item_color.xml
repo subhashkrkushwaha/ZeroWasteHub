@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When item is selected -->
+    <item android:color="@color/nav_item_color"
+        android:state_checked="true" />
+
+    <!-- When item is not selected -->
+    <item android:color="@android:color/black"
+        android:state_checked="false"/>
+</selector>
